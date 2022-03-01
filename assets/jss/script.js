@@ -18,3 +18,18 @@ currentDayEl.textContent = today.toLocaleString(f);
 
 // Displays Current Time in the header
 currentTimeEl.textContent = today.toLocaleString(z);
+
+// Fxn to make the textbox an input
+var taskUpdate = function(event) {
+  // stops the webpage from completing default behaviors- in this case, reloading the page with every form submission
+  event.preventDefault();
+
+  // allows the user to update tasks per hour
+  var taskNameInput = document.querySelector("input[name='taskBox']").value;
+  
+  // JUST A CONSOLE LOG TO MAKE SURE IT CAN READ
+  console.log(taskNameInput);
+}
+
+// Fxn to make the Update Button log the text
+saveBtnEl.addEventListener("click", taskUpdate);
