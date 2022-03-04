@@ -90,8 +90,8 @@ var loadTasks = function() {
 
         var text = localStorage.getItem("schedule-time-item-" + times[i], JSON.stringify(childText));
 
-        taskybox.setAttribute('placeholder', text.toString());
-        console.log(text.toString());
+        taskybox.setAttribute('placeholder', text);
+        console.log(taskybox.attributes.placeholder.textContent);
     }
 }    
 
