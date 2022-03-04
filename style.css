@@ -4,8 +4,8 @@ body {
   line-height: 1;
 }
 
-.textarea {
-  background-color: #77dd77;
+textarea{
+  background: transparent;
   border: none;
   resize: none;
   color: #000000;
@@ -68,9 +68,4 @@ body {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
-}
-
-.container {
-  width: 80%;
-  margin: 10% auto;
 }
