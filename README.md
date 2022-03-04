@@ -1,6 +1,10 @@
 # Work Day Scheduler Starter Code
 ## PROJECT FUNCTIONALITY
-A scheduler that allows you to plan out your workday in advance. Has input allotments every hour from 0900, or 9 AM, to 1700, or 5 PM.`When you click the update button, it saves the data to your local storage, allowing to reaccess the information at a later time.
+A scheduler that allows you to plan out your workday in advance. 
+
+Has input allotments every hour from 0900, or 9 AM, to 1700, or 5 PM.`
+
+When you click the update button, it saves the data to your local storage, allowing to reaccess the information at a later time.
 
 
 ## SCREENSHOT
