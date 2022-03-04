@@ -84,21 +84,21 @@ var taskUpdate = function(elem) {
 
 // FXN to update text
 var loadTasks = function() {
-    for (var i = 0; i < times.length; i++) {
-        var taskNameInput = document.querySelector("section[scheduleTimeId='" + times[i] +"']");
-        var taskybox = taskNameInput.querySelector("input[id='textbox']");
+  for (var i = 0; i < times.length; i++) {
+      var taskNameInput = document.querySelector("section[scheduleTimeId='" + times[i] +"']");
+      var taskybox = taskNameInput.querySelector("input[id='textbox']");
 
-        var text = localStorage.getItem("schedule-time-item-" + times[i], JSON.stringify(childText));
+      var text = localStorage.getItem("schedule-time-item-" + times[i], JSON.stringify(childText));
 
-        taskybox.setAttribute('placeholder', text);
-        console.log(taskybox.attributes.placeholder.textContent);
-    }
+      taskybox.setAttribute('placeholder', text);
+      console.log(taskybox.attributes.placeholder.textContent);
+  }
 }    
 
 // FXN that calls each hour
 for (var i = 0; i < times.length; i++) {
-    console.log(times[i]);
-    timeTable();
+  console.log(times[i]);
+  timeTable();
 }
 
 loadTasks();
